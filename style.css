@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair:wght@300&family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+    max-width: 1600px;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    width: 150px;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    color: var(--secondary-text-color);
+}
+
+.container {
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--primary-text-color);
+    /* margin: auto; */
+   
+}
+
+.nav{
+    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
+   gap: 320px;
+   margin: 52px;
+}
+
+ul {
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    flex-direction: row;
+    color: black;
+}
+
+.nav-links li:hover {
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+.nav-heads.active {
+    color: var(--accent-color);
+}
+
+.search-bar {
+    gap: 10px;
+}
+
+.search-box{
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.btn:hover {
+    background-color: var(--accent-color-dark);
+    cursor: pointer;
+}
+
+
+
+
+.main{
+    padding: 20px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    flex-direction: column;
+    max-width: 400px;
+    padding: 20px;
+    margin-block: 10px;
+    border-radius: 4px;
+    gap: 2px;
+
+}
+
+.card:hover {
+    z-index: 98;
+    transform: translateY(-4px);
+    cursor: pointer;
+    /* box-shadow: 2px 2px 3px #d4d5d7; */
+    border: solid rgb(182, 180, 180);
+    background-color: #ebf6fa;
+    transition-duration: 0.3s;
+}
+
+.news-title{
+    padding: 8px;
+}
+
+.news-source {
+    padding: 8px;
+}
+
+.news-body {
+    padding: 8px;
+}
+
+.card img {
+    width: 400px;
+    height: 200px;
+    border-radius: 4px;
+    /* overflow: hidden; */
+    object-fit: cover;
+}
+
+.card-content {
+    overflow: hidden;
+}

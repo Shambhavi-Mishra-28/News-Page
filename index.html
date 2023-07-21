@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container flex">
+
+        <div class="nav flex">
+            <a href="#" class="logo" onclick="reload()" ><img src="/news_images/news_pic.webp" alt="logo" > </a>
+
+            <div class="nav-links flex" id="nav-links">
+
+                <ul class="flex">
+                    <li class="nav-heads" id="sports" onclick="NavClick('sports')">Sports</li>
+                    <li class="nav-heads" id="buisness" onclick="NavClick('buisness')">Buisness</li>
+                    <li class="nav-heads" id="politics" onclick="NavClick('politics')">Politics</li>
+                    <li class="nav-heads" id="movies" onclick="NavClick('movies')">Movies</li>
+                </ul>
+
+            </div>
+
+            <div class="search-bar flex" id="search-bar">
+                <input id="search-box" class="search-box" type="text" placeholder="eg. IPL ">
+                <button id="btn" class="btn">Search</button>
+            </div>
+        </div>
+
+
+        <div class="main flex" id="main">
+
+        </div>
+
+        <template id="template-card">
+
+            <div class="card flex">
+                <img id="news-img" src="https://via.placeholder.com/600x400" alt="news card">
+
+                <div class="content" id="content">
+                    <h3 class="news-title" id="news-title">Lorem ipsum dolor sit amet.</h3>
+                    <h5 class="news-source" id="news-source">Lorem amet.</h5>
+                <p class="news-body" id="news-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem praesentium voluptate nisi, ducimus repellat iste nostrum.</p>
+
+                </div>
+                
+            </div>
+
+        </template>
+
+        <!-- </div> -->
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
